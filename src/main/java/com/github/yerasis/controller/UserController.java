@@ -77,7 +77,6 @@ public class UserController {
       age=0;
 
     userManipulate.Search(name, role, age);
-    userRepository.selectAllUser();
     request.setAttribute("users", userRepository.getAllUsers());
     return "search";
   }
